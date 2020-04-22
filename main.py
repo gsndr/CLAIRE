@@ -3,7 +3,6 @@ import sys
 import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
 import numpy as np
 import tensorflow as tf
-from tensorflow.compat.v1.keras.backend import set_session
 from tensorflow.compat.v1 import InteractiveSession
 config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True  # dynamically grow the memory used on the GPU
@@ -14,7 +13,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
 
 np.random.seed(12)
 import tensorflow
-tensorflow.set_random_seed(12)
+tensorflow.random.set_seed(12)
 tensorflow.test.is_gpu_available()
 
 from CICIDS2017 import CICIDS2017Execution

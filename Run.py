@@ -4,7 +4,7 @@ import numpy as np
 np.random.seed(12)
 import tensorflow
 import itertools
-tensorflow.set_random_seed(12)
+tensorflow.random.set_seed(12)
 import Plot
 import Preprocessing as prp
 import Models
@@ -27,7 +27,7 @@ from sklearn.metrics import pairwise_distances_argmin_min
 import AutoencoderHypersearch as ah
 import EncodingOrding as eo
 from DatasetConfig import Datasets
-
+from sklearn.model_selection import train_test_split
 
 
 class Execution():
@@ -265,7 +265,8 @@ class Execution():
             x_train = train_X.reshape(train_X.shape[0], train_X.shape[1], train_X.shape[2], 1)
             x_test = test_X.reshape(test_X.shape[0], train_X.shape[1], train_X.shape[2], 1)
             input_shape = (train_X.shape[1], train_X.shape[2], 1)
-
+        XTraining, XValidation, YTraining, YValidation = train_test_split(x_train, y_train, stratify=y_train,
+                                                                          test_size=0.2)
         if (load_cnn == 0):
 
             callbacks_list = [
@@ -281,7 +282,8 @@ class Execution():
                                 epochs=p['epochs'],
                                 callbacks=callbacks_list,
                                 verbose=2,
-                                validation_split=VALIDATION_SPLIT,
+                                #validation_split=VALIDATION_SPLIT,
+                                validation_data=(XValidation, YValidation),
                                 use_multiprocessing=True,
                                 workers=64
                                 )
@@ -319,6 +321,8 @@ class Execution():
         dfResults = pd.DataFrame([r], columns=columns)
 
         print(dfResults)
+
+
 
         results = results.append(dfResults, ignore_index=True)
 
