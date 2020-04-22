@@ -2,7 +2,7 @@ import pandas as pd  # data processing, CSV file I/O (e.g. pd.read_csv)
 import numpy as np
 np.random.seed(12)
 import tensorflow
-tensorflow.set_random_seed(12)
+tensorflow.random.set_seed(12)
 import itertools
 import Plot
 import Preprocessing as prp

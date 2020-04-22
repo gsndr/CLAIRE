@@ -17,7 +17,7 @@ import pandas as pd
 
 np.random.seed(12)
 import tensorflow
-tensorflow.set_random_seed(12)
+tensorflow.random.set_seed(12)
 
 
 from keras.optimizers import RMSprop, Adadelta, Adagrad, Nadam, Adam
