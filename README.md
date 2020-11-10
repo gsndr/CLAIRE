@@ -25,7 +25,8 @@ The repository contains the orginal dataset (folder: "original") and  the datase
 Preprocessing phase is done mapping categorical feature and performing the Min Max scaler.
 
 ## How to use
-* __main.py__ : script to run CLAIRE 
+* __main.py__ : script to run CLAIRE
+
  Tor run the code: main.py NameOfDataset (es CICIDS2017, UNSW__NB15 or KDDCUP99)
  Code contains models (autoencoder and classification) and datasets used for experiments in the work.
  
