@@ -3,6 +3,25 @@
 The repository contains code refered to the work:
 
 
+_Giuseppina Andresini, Annalisa Appice, Donato Malerba_
+
+[Nearest cluster-based intrusion detection through convolutional neural networks](https://www.sciencedirect.com/science/article/pii/S0950705121000617) 
+
+Please cite our work if you find it useful for your research and work.
+```
+@article{ANDRESINI2021106798,
+title = "Nearest cluster-based intrusion detection through convolutional neural networks",
+journal = "Knowledge-Based Systems",
+volume = "216",
+pages = "106798",
+year = "2021",
+issn = "0950-7051",
+doi = "https://doi.org/10.1016/j.knosys.2021.106798",
+url = "http://www.sciencedirect.com/science/article/pii/S0950705121000617",
+author = "Giuseppina Andresini and Annalisa Appice and Donato Malerba"
+}
+
+```
 
 
 
