@@ -23,7 +23,7 @@ author = "Giuseppina Andresini and Annalisa Appice and Donato Malerba"
 
 ```
 
-![alt text](https://ars.els-cdn.com/content/image/1-s2.0-S0950705121000617-gr1.jpgstyle=centerme)
+![alt text](https://ars.els-cdn.com/content/image/1-s2.0-S0950705121000617-gr1_lrg.jpg)
 
 ## Code requirements
 
