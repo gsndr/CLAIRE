@@ -38,7 +38,7 @@ Packages need are:
 * [Scikit-learn](https://scikit-learn.org/stable/)
 
 ## Data
-The datasets used for experiments are accessible from [__DATASETS__](https://drive.google.com/drive/folders/1ztckEt4Yk_CArkVL5y7U6gt7z1Nbl5YC?usp=sharing). Original dataset is transformed in a binary classification: "_attack_, _normal_" (_oneCls files).
+The datasets used for experiments are accessible from [__DATASETS__](https://drive.google.com/drive/folders/1tso6zaSI98NrC64CQurkYnbSm0mLJkoi?usp=sharing). Original dataset is transformed in a binary classification: "_attack_, _normal_" (_oneCls files).
 The repository contains the orginal dataset (folder: "original") and  the dataset after the preprocessing phase (folder: "numeric") 
 
 Preprocessing phase is done mapping categorical feature and performing the Min Max scaler.
